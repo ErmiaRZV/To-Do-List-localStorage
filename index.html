@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/myCss.css">
+    <link rel="stylesheet" href="font/css/fontello.css">
+</head>
+
+<body class="bg-[#292929] overflow-x-hidden">
+    <section class="w-full min-h-[100vh] bg-[#292929] flex flex-wrap content-start relative">
+        <div id="p" class="flex absolute top-0 left-0 h-1 w-full z-0 opacity-0  justify-center items-center  translate-y-[-100vh] duration-1000">
+            <div id="popup" class="shadow bg-gradient-to-t from-[#9e2626]  to-[#8c6934] w-[80%] md:w-96 h-80  flex flex-wrap content-center justify-center gap-10 ">
+                <h2 class="w-full flex justify-center text-white">
+                    Are you sure you want to delete it?</h2>
+                <button class="text-white hover:text-gray-300 duration-500">Yes</button>
+                <button class="text-white hover:text-gray-300 duration-500">Cancle</button>
+
+            </div>
+        </div>
+
+
+        <div id="p2" class="absolute top-0 left-0 h-1 w-full z-0 opacity-0 flex justify-center items-center  translate-y-[-100vh] duration-1000">
+            <div id="popup2" class="shadow bg-gradient-to-t from-[#9e2626]  to-[#8c6934] w-[80%] md:w-96 h-80  flex flex-wrap content-center justify-center gap-10 ">
+                <h2 class="w-full flex justify-center text-white">
+                    Are you sure you want to clear all?</h2>
+                <button class="text-white hover:text-gray-300 duration-500">Yes</button>
+                <button class="text-white hover:text-gray-300 duration-500">Cancle</button>
+
+            </div>
+        </div>
+
+
+        <div id="p3" class="absolute top-0 left-0 h-1 w-full z-0 opacity-0 flex justify-center items-center  translate-y-[-100vh] duration-1000">
+            <div id="popup3" class="shadow bg-gradient-to-t from-[#9e2626]  to-[#8c6934] w-[80%] md:w-96 h-80  flex flex-wrap content-center justify-center gap-10 ">
+                <h2 class="w-full flex justify-center text-white">
+                    Are you sure you want to clear all??</h2>
+                <button class="text-white hover:text-gray-300 duration-500">Yes</button>
+                <button class="text-white hover:text-gray-300 duration-500">Cancle</button>
+
+            </div>
+        </div>
+
+
+
+        <div class="w-full h-[80px] bg-[#292929] flex justify-center items-center ">
+            <h1 class="text-white text-3xl">To-Do List</h1>
+        </div>
+        <div class="w-full overflow-hidden bg-[#333333] h-[50px] flex relative">
+            <input class="ps-4 flex flex-wrap outline-none border-none h-full w-full bg-[#333333] text-white"
+                placeholder="INSERT A NEW TO-DO" type="text">
+            <button id="add"
+                class="text-white absolute top-[0] end-8 text-3xl hover:text-gray-300 p-1 duration-500">+</button>
+            <button id="edit" class="text-white absolute top-[20%] end-8 text-base hover:text-gray-300 p-1 duration-500 hidden ">
+                Edit
+            </button>
+        </div>
+        <h4 class="text-white py-3 ps-3">Tasks : </h4>
+        <nav class="w-full  h-auto">
+            <ul id="ul1" class="w-full h-full flex flex-wrap">
+
+            </ul>
+        </nav>
+        
+        <div class="w-full flex flex-wrap justify-center h-[50px] bg-[#292929]">
+            <button id="allClear" class="text-white hover:text-gray-300 duration-500">Clear All Tasks</button>
+        </div>
+        <h4 class="text-white py-3  ps-3">Done Tasks : </h4>
+        <nav class="w-full  h-auto">
+            <ul id="ulCh" class="w-full h-full flex flex-wrap">
+
+            </ul>
+        </nav>
+        <div class="w-full flex flex-wrap justify-center h-[50px] bg-[#292929]">
+            <button id="allClear2" class="text-white hover:text-gray-300 duration-500">Clear All Done Tasks</button>
+        </div>
+    </section>
+    <section class="w-full h-[100px] bg-[#292929]  flex items-center">
+        <div class="2xl:container mx-auto w-full flex-wrap flex px-[10px] md:px-[40px] lg:px-[60px] items-center content-center">
+            <div class="w-[60%] h-full flex justify-start items-center content-center">
+                <h1 class="text-white text-[22px] md:text-[36px]">Ermia Razavi</h1>
+            </div>
+            <nav class="h-full w-[40%]  ">
+                <ul class="w-full h-full flex justify-end items-center gap-[10px]  content-center">
+                    <li
+                        class="w-[30px] h-[30px] md:w-[50px] md:h-[50px] bg-[#1a1a17] rounded-[50%] hover:bg-[#080808] duration-[.4s]">
+                        <a class="w-full h-full rounded-lg flex justify-center items-center" target="_blank"
+                            href="https://www.linkedin.com/in/ermia-razavi-a611312a3/"><i
+                                class="w-full h-full flex justify-center items-center rounded-lg text-white md:text-[22px] icon-linkedin"></i></a>
+                    </li>
+                    <li
+                        class="w-[30px] h-[30px] md:w-[50px] md:h-[50px] bg-[#1a1a17] rounded-[50%] hover:bg-[#080808] duration-[.4s]">
+                        <a class="w-full h-full rounded-lg flex justify-center items-center" target="_blank"
+                            href="https://github.com/ErmiaRZV"><i
+                                class="w-full h-full flex justify-center items-center rounded-lg text-white md:text-[22px] icon-github-circled"></i></a>
+                    </li>
+                    <li
+                        class="w-[30px] h-[30px] md:w-[50px] md:h-[50px] bg-[#1a1a17] rounded-[50%] hover:bg-[#080808] duration-[.4s]">
+                        <a class="w-full h-full rounded-lg flex justify-center items-center" target="_blank"
+                            href="https://www.instagram.com/ermia_razavi.dev/?utm_source=ig_web_button_share_sheet"><i
+                                class="w-full h-full flex justify-center items-center rounded-lg text-white md:text-[22px] icon-instagram"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </section>
+    
+
+
+</body>
+<script src="js/main.js" >
+
+</script>
+
+</html>
+
